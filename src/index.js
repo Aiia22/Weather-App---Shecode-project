@@ -1,4 +1,4 @@
-//date
+//Current date
 function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
@@ -26,7 +26,7 @@ let currentDate = document.querySelector("#currentDate");
 let currentTime = new Date();
 currentDate.innerHTML = formatDate(currentTime);
 
-//Units
+//Units convert
 function convertUnitC(event) {
   event.preventDefault();
   let temp = document.querySelector("#currentTemp");
@@ -43,7 +43,7 @@ function convertUnitF(event) {
 let unitF = document.querySelector("#fahr");
 unitF.addEventListener("click", convertUnitF);
 
-//current temperature by city name
+//Current temperature by city name
 
 function ShowCityCurrentTemp(response) {
   console.log(response);

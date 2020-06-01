@@ -6,6 +6,9 @@
   max-width: 1000px;
   font-family: "Neucha", cursive;
 }
+.searchF {
+  margin-bottom: 35px;
+}
 .BarStyle {
   border-radius: 5px;
   text-align: left;
@@ -25,10 +28,11 @@
 ::placeholder {
   font-size: 14px;
   color: #b56f58;
-  padding-left: 20px;
+  padding-left: 5px;
 }
-button {
+.yourLocation {
   margin-top: 11px;
+  margin-left: 10px;
   border-radius: 5px;
   box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.3);
   border-style: none;
@@ -72,8 +76,17 @@ a:focus {
   font-weight: 200;
 }
 .info {
-  color: #b56f58;
+  color: #7d5a5a;
   font-size: 22px;
+}
+.precipitation {
+  color: #b56f58;
+}
+.wind {
+  color: #b56f58;
+}
+.feels {
+  color: #b56f58;
 }
 
 .moon {
@@ -84,7 +97,7 @@ a:focus {
   top: 44px;
 }
 
-.wheather {
+.weather {
   text-align: center;
   font-size: 140px;
   color: #fff3cd;

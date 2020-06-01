@@ -21,13 +21,12 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>WeatherApp-Shecodes Project</title>
   </head>
-
   <body>
     <div class="weatherApp">
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <form id="search-form">
+            <form id="search-form" class="searchF">
               <input
                 type="search"
                 placeholder="Type a city.."
@@ -42,13 +41,10 @@
                 class="BarStyle"
                 id="submitCity"
               />
-              <button id="currentLocation">
+              <button id="currentLocation" class="yourLocation">
                 Current Location
               </button>
             </form>
-
-            <br />
-            <br />
             <div class="city">
               <h1>
                 <span id="currentCity">Dublin, </span
@@ -61,7 +57,7 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="wheather">
+            <div class="weather">
               <i class="fas fa-cloud-sun"></i>
             </div>
           </div>
@@ -71,13 +67,14 @@
             <div id="currentDate" class="day"></div>
             <br />
             <div class="info">
-              <div class="Precipitation">
-                Humidity: <span id="currentHumidity">10</span>%
-              </div>
-              <div class="wind">Wind: <span id="currentWind">5</span>km/h</div>
-              <div class="Feels">
-                Feels like: <span id="currentFeels">14</span>° C
-              </div>
+              <span class="precipitation"> Humidity: </span
+              ><span id="currentHumidity">10</span>%
+              <br />
+              <span class="wind">Wind: </span
+              ><span id="currentWind">5</span>km/h
+              <br />
+              <span class="feels"> Feels like: </span
+              ><span id="currentFeels">14</span>° C
             </div>
           </div>
           <div class="col-1">
@@ -159,7 +156,7 @@
                 Sat
               </div>
               <br />
-              <div class="iS">
+              <div class="iSa">
                 <i class="fas fa-cloud-showers-heavy"></i>
               </div>
               <br />
@@ -170,7 +167,7 @@
                 Sun
               </div>
               <br />
-              <div class="iT">
+              <div class="iSu">
                 <i class="fas fa-cloud-sun-rain"></i>
               </div>
               <br />
@@ -180,7 +177,6 @@
         </div>
       </div>
     </div>
-
     <script src="src/index.js"></script>
   </body>
 </html>
