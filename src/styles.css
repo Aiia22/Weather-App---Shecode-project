@@ -107,30 +107,3 @@ hr {
   font-size: 44px;
   color: #fff3cd;
 }
-
-@media (max-width: 970px) {
-  /* put all rules for less than or equal to 960 pixels here */
-
-  .moon {
-    /* rules for the moon go here  */
-  }
-
-  .days {
-    /* rules for the days go here  */
-  }
-}
-
-/* For example: 600px */
-@media (max-width: 600px) {
-  /* put all rules for less than or equal to 600 pixels here */
-
-  .moon {
-    /* rules for the moon go here  */
-  }
-
-  .days {
-    /* rules for the days go here  */
-  }
-}
-
-/* down to 350px */
