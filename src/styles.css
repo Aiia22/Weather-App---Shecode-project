@@ -1,0 +1,136 @@
+.weatherApp {
+  background: linear-gradient(-225deg, #fff3cd 0%, #ff926b 100%);
+  padding: 60px;
+  border-radius: 22px;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family: "Neucha", cursive;
+}
+.BarStyle {
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.3);
+  border-style: none;
+  background-color: #fdf8e5;
+  color: #7d5a5a;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  padding: 5px;
+}
+
+.searchBar:hover {
+  opacity: 0.7;
+}
+
+::placeholder {
+  font-size: 14px;
+  color: #b56f58;
+  padding-left: 20px;
+}
+button {
+  margin-top: 11px;
+  border-radius: 5px;
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.3);
+  border-style: none;
+  background-color: #7d5a5a;
+  color: #fdf8e5;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  padding: 5px 10px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.city {
+  color: #7d5a5a;
+  font-size: 50px;
+}
+.city h1 .unit {
+  font-size: 15px;
+  position: relative;
+  top: -32px;
+  font-weight: bolder;
+}
+
+a {
+  color: #ff6584;
+  text-decoration: none;
+}
+a:hover {
+  color: #7d5a5a;
+  text-decoration: none;
+}
+a:focus {
+  color: #7d5a5a;
+}
+
+.day {
+  color: #7d5a5a;
+  font-size: 35px;
+  font-weight: 200;
+}
+.info {
+  color: #b56f58;
+  font-size: 22px;
+}
+
+.moon {
+  font-size: 100px;
+  color: #fff3cd;
+  position: relative;
+  right: 122px;
+  top: 44px;
+}
+
+.wheather {
+  text-align: center;
+  font-size: 140px;
+  color: #fff3cd;
+  margin-right: 40px;
+}
+.imageCity {
+  display: block;
+  margin: 0 auto;
+  color: #ffecc7;
+}
+hr {
+  margin: 0;
+}
+.week {
+  text-align: center;
+  color: #7d5a5a;
+  font-size: 22px;
+}
+.week i {
+  font-size: 44px;
+  color: #fff3cd;
+}
+
+@media (max-width: 970px) {
+  /* put all rules for less than or equal to 960 pixels here */
+
+  .moon {
+    /* rules for the moon go here  */
+  }
+
+  .days {
+    /* rules for the days go here  */
+  }
+}
+
+/* For example: 600px */
+@media (max-width: 600px) {
+  /* put all rules for less than or equal to 600 pixels here */
+
+  .moon {
+    /* rules for the moon go here  */
+  }
+
+  .days {
+    /* rules for the days go here  */
+  }
+}
+
+/* down to 350px */

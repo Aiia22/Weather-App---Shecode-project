@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8995d23b9c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Homework W2</title>
+  </head>
+
+  <body>
+    <div class="weatherApp">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <form id="search-form">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="off"
+                class="BarStyle"
+                id="searchBar"
+              />
+              <input
+                type="submit"
+                value="Search"
+                autofocus="off"
+                class="BarStyle"
+                id="submitCity"
+              />
+              <button id="currentLocation">
+                Current Location
+              </button>
+            </form>
+
+            <br />
+            <br />
+            <div class="city">
+              <h1>
+                <span id="currentCity">Dublin, </span
+                ><span id="currentTemp">17</span>
+                <span class="unit">
+                  <a id="celcius" href="#"> °C </a> |
+                  <a id="fahr" href="#">°F</a>
+                </span>
+              </h1>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="wheather">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div id="currentDate" class="day"></div>
+            <br />
+            <div class="info">
+              <div class="Precipitation">
+                Humidity: <span id="currentHumidity">10</span>%
+              </div>
+              <div class="wind">Wind: <span id="currentWind">5</span>km/h</div>
+              <div class="Feels">
+                Feels like: <span id="currentFeels">14</span>° C
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="moon">
+              <i class="fas fa-moon"></i>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="imageCity">
+              <img
+                src="img/undraw_quite_town_mg2q copie.svg"
+                alt="Image city"
+                width="500px"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <br />
+        <div class="week">
+          <div class="row">
+            <div class="col">
+              <div class="monday">
+                Mon
+              </div>
+              <br />
+              <div class="iM">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <br />
+              10/19° C
+            </div>
+            <div class="col">
+              <div class="tuesday">
+                Tue
+              </div>
+              <br />
+              <div class="iT">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <br />
+              11/19° C
+            </div>
+            <div class="col">
+              <div class="wednesday">
+                Wed
+              </div>
+              <br />
+              <div class="iW">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <br />
+              9/22° C
+            </div>
+            <div class="col">
+              <div class="thursday">
+                Thu
+              </div>
+              <br />
+              <div class="iTh">
+                <i class="fas fa-sun"></i>
+              </div>
+              <br />
+              11/20° C
+            </div>
+            <div class="col">
+              <div class="friday">
+                Fri
+              </div>
+              <br />
+              <div class="iF">
+                <i class="fas fa-cloud-showers-heavy"></i>
+              </div>
+              <br />
+              9/17° C
+            </div>
+            <div class="col">
+              <div class="saturday">
+                Sat
+              </div>
+              <br />
+              <div class="iS">
+                <i class="fas fa-cloud-showers-heavy"></i>
+              </div>
+              <br />
+              8/17° C
+            </div>
+            <div class="col">
+              <div class="sunday">
+                Sun
+              </div>
+              <br />
+              <div class="iT">
+                <i class="fas fa-cloud-sun-rain"></i>
+              </div>
+              <br />
+              8/16° C
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
