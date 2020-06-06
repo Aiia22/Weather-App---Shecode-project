@@ -83,8 +83,6 @@ form.addEventListener("submit", searchCity);
 
 function showWeather(response) {
   event.preventDefault();
-  console.log(response);
-  console.log("kjuhyghyjuhyghjuhyg" + response.data.main.temp);
   let h1 = document.querySelector("#currentCity");
   h1.innerHTML = response.data.name + ", ";
   let temperature = Math.round(response.data.main.temp);
